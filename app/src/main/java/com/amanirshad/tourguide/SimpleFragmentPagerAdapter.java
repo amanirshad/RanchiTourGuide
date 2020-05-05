@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
-    private String[] tabTitles = new String[]{"Waterfalls", "Dams", "Tourist Places", "Restaurants"};
+    private String[] tabTitles = new String[]{"Waterfalls", "Dams", "Tourist Places", "Dining"};
 
     public SimpleFragmentPagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
@@ -20,7 +20,10 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new WaterFallFragment();
+        if (position == 1)
+            return new DamFragment();
+        else
+            return new WaterFallFragment();
     }
 
     @Override
