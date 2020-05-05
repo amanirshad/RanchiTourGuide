@@ -20,10 +20,14 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+        if (position == 0)
+            return new WaterFallFragment();
         if (position == 1)
             return new DamFragment();
+        if (position == 2)
+            return new TouristPlacesFragment();
         else
-            return new WaterFallFragment();
+            return new DiningFragment();
     }
 
     @Override

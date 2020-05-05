@@ -27,15 +27,15 @@ public class WaterFallFragment extends Fragment {
 
         final ArrayList<Location> waterfallArray = new ArrayList<Location>();
 
-        waterfallArray.add(new Location("Perwaghagh", "Khunti,Torpa,Jharkhand", R.drawable.perwaghaghfalss));
-        waterfallArray.add(new Location("Lower Ghaghri Falls", "Latehar,Netarhat,Jharkhand", R.drawable.lowerghaghrifalls));
-        waterfallArray.add(new Location("Dassam Falls", "Taimara,Bundu,Jharkhand", R.drawable.dassamfalls));
-        waterfallArray.add(new Location("Hundru Falls", "Faul,Hundru,Jharkhand", R.drawable.hundrufalls));
-        waterfallArray.add(new Location("Sita Falls", "Dumargarhi,Jharkhand", R.drawable.sitafalls));
-        waterfallArray.add(new Location("Jonha Falls", "Ranchi-Purulia Highway,Jonha,Jharkhand", R.drawable.jonhafalls));
-        waterfallArray.add(new Location("Lodh Watefalls", "Palamu,Latehar,Jharkhand", R.drawable.lodhfalls));
-        waterfallArray.add(new Location("Rajrappa Waterfalls", "Ramgarh,Jharkhand", R.drawable.rajrappawaterfalls));
-        waterfallArray.add(new Location("Panchghagh Waterfalls", "Khunti,Jharkhand", R.drawable.panchghaghfalls));
+        waterfallArray.add(new Location(getString(R.string.perwaghagh), getString(R.string.perwaghagh_address), R.drawable.perwaghaghfalss));
+        waterfallArray.add(new Location(getString(R.string.lowerghaghrifalls), getString(R.string.lowerghaghrifalls_address), R.drawable.lowerghaghrifalls));
+        waterfallArray.add(new Location(getString(R.string.dassamfalls), getString(R.string.dassamfalls_address), R.drawable.dassamfalls));
+        waterfallArray.add(new Location(getString(R.string.hundrufalls), getString(R.string.hundrufalls_address), R.drawable.hundrufalls));
+        waterfallArray.add(new Location(getString(R.string.sitafalls), getString(R.string.sitafalls_address), R.drawable.sitafalls));
+        waterfallArray.add(new Location(getString(R.string.jonhafalls), getString(R.string.jonhafalls_address), R.drawable.jonhafalls));
+        waterfallArray.add(new Location(getString(R.string.lodhwaterfalls), getString(R.string.lodhwaterfalls_address), R.drawable.lodhfalls));
+        waterfallArray.add(new Location(getString(R.string.rajrappawaterfall), getString(R.string.rajrappawaterfall_address), R.drawable.rajrappawaterfalls));
+        waterfallArray.add(new Location(getString(R.string.panchghaghfalls), getString(R.string.panchghaghfalls_address), R.drawable.panchghaghfalls));
 
         LocationAdapter locationAdapter = new LocationAdapter(getActivity(), waterfallArray);
 

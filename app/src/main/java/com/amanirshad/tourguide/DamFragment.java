@@ -27,11 +27,11 @@ public class DamFragment extends Fragment {
 
         final ArrayList<Location> damArray = new ArrayList<Location>();
 
-        damArray.add(new Location("Kanke Dam", "Kanke,Ranchi,Jharkhand", R.drawable.kankedams));
-        damArray.add(new Location("Dhurwa Dam", "Dhurwa,Ranchi,Jharkhand", R.drawable.dhurwadam));
-        damArray.add(new Location("Getalsud Dam", "Kanke,Ranchi,Jharkhand", R.drawable.getalsuddam));
-        damArray.add(new Location("Rukka Dam", "Ormanjhi,Ranchi,Jharkhand", R.drawable.rukkadam));
-        damArray.add(new Location("Patratu Dam", "Patratu,Jharkhand", R.drawable.patratudam));
+        damArray.add(new Location(getString(R.string.kankedam), getString(R.string.kanke_address), R.drawable.kankedams));
+        damArray.add(new Location(getString(R.string.dhurwadam), getString(R.string.dhurwa_address), R.drawable.dhurwadam));
+        damArray.add(new Location(getString(R.string.getalsuddam), getString(R.string.ormanjhi_address), R.drawable.getalsuddam));
+        damArray.add(new Location(getString(R.string.rukkadam), getString(R.string.ormanjhi_address), R.drawable.rukkadam));
+        damArray.add(new Location(getString(R.string.patratudam), getString(R.string.patratu_address), R.drawable.patratudam));
 
         LocationAdapter locationAdapter = new LocationAdapter(getActivity(), damArray);
 
